@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌹Kieu Hoang Yen </title>
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css"
+        integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+    <!-- aa2 -->
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .body-letter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fae1dd;
+        }
+
+        .letter {
+            position: relative;
+            z-index: 1;
+        }
+
+        .valentines {
+            position: relative;
+            top: 50px;
+            cursor: pointer;
+            animation: up 3s linear infinite;
+        }
+
+        @keyframes up {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+
+        .envelope {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #f08080;
+        }
+
+        .envelope:before {
+            background-color: #f08080;
+            content: "";
+            position: absolute;
+            width: 212px;
+            height: 212px;
+            transform: rotate(45deg);
+            top: -105px;
+            left: 44px;
+            border-radius: 30px 0 0 0;
+        }
+
+        .card {
+            position: absolute;
+            background-color: #eae2b7;
+            width: 270px;
+            height: 170px;
+            top: 5px;
+            left: 15px;
+            box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+        }
+
+        .card:before {
+            content: "";
+            position: absolute;
+            border: 3px solid #003049;
+            border-style: dotted;
+            width: 240px;
+            heighT: 140px;
+            left: 12px;
+            top: 12px;
+        }
+
+        .text {
+            position: absolute;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 28px;
+            text-align: center;
+            line-height: 25px;
+            top: 19px;
+            left: 85px;
+            color: #003049;
+        }
+
+        .heart {
+            background-color: #d62828;
+            display: inline-block;
+            height: 30px;
+            margin: 0 10px;
+            position: relative;
+            top: 110px;
+            left: 105px;
+            transform: rotate(-45deg);
+            width: 30px;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            background-color: #d62828;
+            border-radius: 50%;
+            height: 30px;
+            position: absolute;
+            width: 30px;
+        }
+
+        .heart:before {
+            top: -15px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 15px;
+            top: 0;
+        }
+
+        .hearts {
+            position: absolute;
+            top: 0
+        }
+
+        .one,
+        .two,
+        .three,
+        .four,
+        .five {
+            background-color: red;
+            display: inline-block;
+            height: 10px;
+            margin: 0 10px;
+            position: relative;
+            transform: rotate(-45deg);
+            width: 10px;
+            top: 50px;
+        }
+
+        .one:before,
+        .one:after,
+        .two:before,
+        .two:after,
+        .three:before,
+        .three:after,
+        .four:before,
+        .four:after,
+        .five:before,
+        .five:after {
+            content: "";
+            background-color: red;
+            border-radius: 50%;
+            height: 10px;
+            position: absolute;
+            width: 10px;
+        }
+
+        .one:before,
+        .two:before,
+        .three:before,
+        .four:before,
+        .five:before {
+            top: -5px;
+            left: 0;
+        }
+
+        .one:after,
+        .two:after,
+        .three:after,
+        .four:after,
+        .five:after {
+            left: 5px;
+            top: 0;
+        }
+
+        .one {
+            left: 10px;
+            animation: heart 1s ease-out infinite;
+        }
+
+        .two {
+            left: 30px;
+            animation: heart 2s ease-out infinite;
+        }
+
+        .three {
+            left: 50px;
+            animation: heart 1.5s ease-out infinite;
+        }
+
+        .four {
+            left: 70px;
+            animation: heart 2.3s ease-out infinite;
+        }
+
+        .five {
+            left: 90px;
+            animation: heart 1.7s ease-out infinite;
+        }
+
+        @keyframes heart {
+            0% {
+                transform: translateY(0) rotate(-45deg) scale(0.3);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-150px) rotate(-45deg) scale(1.3);
+                opacity: 0.5;
+            }
+        }
+
+        .front {
+            position: absolute;
+            border-right: 180px solid #f4978e;
+            border-top: 95px solid transparent;
+            border-bottom: 100px solid transparent;
+            left: 120px;
+            top: 5px;
+            width: 0;
+            height: 0;
+            z-index: 10;
+        }
+
+        .front:before {
+            position: absolute;
+            content: "";
+            border-left: 300px solid #f8ad9d;
+            border-top: 195px solid transparent;
+            left: -120px;
+            top: -95px;
+            width: 0;
+            height: 0;
+        }
+
+        .shadow {
+            position: absolute;
+            width: 330px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+            top: 265px;
+            left: -15px;
+            animation: scale 3s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes scale {
+
+            0%,
+            100% {
+                transform: scaleX(1);
+            }
+
+            50% {
+                transform: scaleX(0.85);
+            }
+        }
+
+        .hover-animation {
+            animation: hover 1.75s ease-in-out infinite;
+        }
+
+        #castle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fae1dd;
+        }
+
+        .dustDef {
+            position: absolute;
+            background-color: white;
+            border-radius: 100%;
+            box-shadow: 0 0 3px 1px white;
+            opacity: 0;
+        }
+
+        @keyframes hover {
+            0% {
+                margin-top: 60px;
+            }
+
+            50% {
+                margin-top: 50px;
+            }
+
+            100% {
+                margin-top: 60px;
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 25px 0 #e8b2ca;
+            }
+
+            50% {
+                box-shadow: 0 0 45px 0 #e8b2ca;
+            }
+
+            100% {
+                box-shadow: 0 0 25px 0 #e8b2ca;
+            }
+        }
+
+        @keyframes fall {
+            5% {
+                top: 209px;
+                left: 105px;
+                transform: rotate(55deg) scale(0.9, 0.95) skew(-18deg);
+                opacity: 0.9;
+            }
+
+            30% {
+                left: 90px;
+            }
+
+            55% {
+                left: 130px;
+            }
+
+            60%,
+            100% {
+                top: 380px;
+                transform: rotate(30deg) scale(0.9, 0.95) skew(-32deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes floatAnimate {
+            0% {
+                background-size: 105% 120%;
+                background-position: 0 0;
+                opacity: 0.7;
+            }
+
+            50% {
+                background-size: 100% 100%;
+                background-position: 0 0;
+                opacity: 0.5;
+            }
+
+            100% {
+                background-size: 105% 120%;
+                background-position: 0 0;
+                opacity: 0.7;
+            }
+        }
+    </style> -->
+    <style>
+        svg {
+
+            width: 80%;
+            display: block;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        text {
+            fill: #e6668a;
+            font-family: consolas;
+            font-size: 9px;
+        }
+
+        p {
+            position: absolute;
+            z-index: 2
+        }
+
+        label {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            opacity: .8
+        }
+
+        /* style letter */
+        .box-content.active {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+
+        .box-content {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 100000000000;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            transform: scale(0.01);
+            visibility: hidden;
+            transition: 0.5s;
+        }
+
+        .fa-xmark {
+            position: absolute;
+            right: 5%;
+            top: 5%;
+            font-size: 40px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .fa-xmark:hover {
+            filter: drop-shadow(0 0 10px #fff);
+        }
+
+        .image-decorate {
+            display: flex;
+            width: 700px;
+            z-index: 10;
+            height: 100%;
+        }
+
+        /* .content1 {
+            position: absolute;
+            width: 700px;
+            height: 500px;
+            background-image: radial-gradient(circle farthest-corner at center, #f9edf3 10%, #ffd3ee 100%);
+            border-radius: 10px 70px 10px 70px;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0);
+            cursor: pointer;
+        } */
+
+        .textLetter {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            user-select: none;
+        }
+
+        .textLetter h2 {
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .textLetter .contentLetter {
+            font-size: 19px;
+            text-align: center;
+            padding: 0px 30px;
+            margin-top: 10px;
+            font-family: 'Dancing Script', cursive;
+            position: initial;
+
+        }
+
+
+
+        .letters{
+    position: absolute;
+    width: 65px;
+    transition: 10s ease-in-out;
+    cursor: pointer;
+    z-index: 1000;
+}
+.letters img{
+    width: 100%;
+}
+.wrapperLetterForm{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.boxLetter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxLetter .formLetter{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background-color: #FFEBEB;
+    border-radius: 20px;
+    z-index: 100;
+    padding: 20px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.formLetter .wrapperLetter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #FF6666;
+    border-radius: inherit;
+    display: flex;
+}
+.boxLetter .before{
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    background: #fff;
+    transform: rotate(-15deg);
+    border-radius: 20px;
+    z-index: 10;
+}
+.formLetter .heartLetter{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FFEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.heartLetter .heartLetterItem{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background: #FF6666;
+}
+.heartLetter:first-child{
+    right: 5px;
+    top: 10px;
+}
+.heartLetter:nth-child(2){
+    left: 5px;
+    bottom: 10px;
+}
+.heartLetterItem::before, .heartLetterItem::after{
+    position: absolute;
+    content: '';
+    
+}
+.heartLetterItem::before{
+    top: -50%;
+}
+.heartLetterItem::after{
+    left: -50%;
+}
+.giftbox{
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+.giftbox .img{
+    position: absolute;
+    width: 180px;
+    bottom: 60px;
+    left: 50px;
+    z-index: 100;
+}
+.giftbox img{
+    width: 80%;
+    border-radius: 15px;
+    border: 6px solid lightpink;
+
+}
+.textLetter {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            user-select: none;
+        }
+
+        .textLetter h2 {
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .textLetter .contentLetter {
+            font-size: 19px;
+            text-align: center;
+            padding: 0px 40px;
+            margin-top: 10px;
+            font-family: 'Dancing Script', cursive;
+            position: initial;
+
+        }
+.fa-xmark{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+}
+.show{
+    display: block;
+}
+.heartAnimation{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+}
+.heartAnimation img{
+    width: 100%;
+}
+.mewmew1, .mewmew2{
+    position: absolute;
+    width: 90px;
+}
+.mewmew1{
+    bottom: 0;
+    left: 0;
+}
+.mewmew2{
+    bottom: 0;
+    right: 0;
+}
+.mewmew1 img, .mewmew2 img{
+    width: 100%;
+}
+
+.avt{
+    stroke-width: 3px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <svg style="display: none;" id="theSvg" viewBox="-120 -30 240 180" enable-background="new 0 0 174 148"
+        xml:space="preserve">
+        <defs>
+            <filter id="f" filterUnits="userSpaceOnUse" x="-120" y="-30" width="120%" height="120%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"></feGaussianBlur>
+                <feOffset in="blur" dx="3" dy="5" result="shadow"></feOffset>
+                <feFlood flood-color="rgba(3,0,0,1)" result="color" />
+                <feComposite in="color" in2="shadow" operator="in" />
+                <feComposite in="SourceGraphic" />
+            </filter>
+            <path id="shape" d="M0, 21.054 
+       C0, 21.054 24.618, -15.165 60.750, 8.554 
+       C93.249, 29.888 57.749, 96.888 0, 117.388
+       C-57.749, 96.888  -93.249, 29.888 -60.750, 8.554
+       C-24.618, -15.165  -0, 21.054 -0, 21.054z    
+    " />
+            <path id="partialPath" />
+
+        </defs>
+
+        <text dy="-2">
+            <textPath style="font-family: fantasy;" xlink:href="#partialPath" startOffset="12">
+                🌹Kieu Hoang Yen
+                🌹....................................................................................................................................................
+....................🌹
+                Only for🌹
+            </textPath>
+        </text>
+
+        <use id="useThePath" xlink:href="#partialPath" stroke="white" stroke-width=".5" stroke-opacity=".5" fill="none"
+            style="display:none;" />
+    </svg>
+
+    <script>
+        let rid = null; // request animation id
+        const SVG_NS = "http://www.w3.org/2000/svg";
+        const pathlength = shape.getTotalLength();
+
+        let t = 0; // at the begining of the path
+        let lengthAtT = pathlength * t;
+
+        let d = shape.getAttribute("d");
+
+        // 1. build the d array
+        let n = d.match(/C/gi).length; // how many times
+
+        let pos = 0; // the position, used to find the indexOf the nth C
+
+        class subPath {
+            constructor(d) {
+                this.d = d;
+                this.get_PointsRy();
+                this.previous = subpaths.length > 0 ? subpaths[subpaths.length - 1] : null;
+                this.measurePath();
+                this.get_M_Point(); //lastPoint
+                this.lastCubicBezier;
+                this.get_lastCubicBezier();
+            }
+
+            get_PointsRy() {
+                this.pointsRy = [];
+                let temp = this.d.split(/[A-Z,a-z\s,]/).filter(v => v); // remove empty elements
+                temp.map(item => {
+                    this.pointsRy.push(parseFloat(item));
+                }); //this.pointsRy numbers not strings
+            }
+
+            measurePath() {
+                let path = document.createElementNS(SVG_NS, "path");
+                path.setAttributeNS(null, "d", this.d);
+                // no need to append it to the SVG
+                // the lengths of every path in dry
+                this.pathLength = path.getTotalLength();
+            }
+
+            get_M_Point() {
+                if (this.previous) {
+                    let p = this.previous.pointsRy;
+                    let l = p.length;
+                    this.M_point = [p[l - 2], p[l - 1]];
+                } else {
+                    let p = this.pointsRy;
+                    this.M_point = [p[0], p[1]];
+                }
+            }
+
+            get_lastCubicBezier() {
+                let lastIndexOfC = this.d.lastIndexOf("C");
+                let temp = this.d
+                    .substring(lastIndexOfC + 1)
+                    .split(/[\s,]/)
+                    .filter(v => v);
+                let _temp = [];
+                temp.map(item => {
+                    _temp.push(parseFloat(item));
+                });
+                this.lastCubicBezier = [this.M_point];
+                for (let i = 0; i < _temp.length; i += 2) {
+                    this.lastCubicBezier.push(_temp.slice(i, i + 2));
+                }
+            }
+        }
+
+        let subpaths = [];
+
+        // create new subPaths
+        for (let i = 0; i < n; i++) {
+            // finds the of nth C in d
+            let newpos = d.indexOf("C", pos + 1);
+            if (i > 0) {
+                // if it's not the first C
+                let sPath = new subPath(d.substring(0, newpos));
+                subpaths.push(sPath);
+            }
+            //change the value of the position pos
+            pos = newpos;
+        }
+        // at the end add d to the subpaths array
+        subpaths.push(new subPath(d));
+
+        // 2. get the index of the bezierLengths where the point at t is
+        let index;
+        for (index = 0; index < subpaths.length; index++) {
+            if (subpaths[index].pathLength >= lengthAtT) {
+                break;
+            }
+        }
+
+        function get_T(t, index) {
+            let T;
+            lengthAtT = pathlength * t;
+            if (index > 0) {
+                T =
+                    (lengthAtT - subpaths[index].previous.pathLength) /
+                    (subpaths[index].pathLength - subpaths[index].previous.pathLength);
+            } else {
+                T = lengthAtT / subpaths[index].pathLength;
+            }
+            //console.log(T)
+            return T;
+        }
+
+        let T = get_T(t, index);
+
+        let newPoints = getBezierPoints(T, subpaths[index].lastCubicBezier);
+
+        drawCBezier(newPoints, partialPath, index);
+
+        function getBezierPoints(t, points) {
+            let helperPoints = [];
+
+            // helper points 0,1,2
+            for (let i = 1; i < 4; i++) {
+                //points.length must be 4 !!!
+                let p = lerp(points[i - 1], points[i], t);
+                helperPoints.push(p);
+            }
+
+            // helper points 3,4
+            helperPoints.push(lerp(helperPoints[0], helperPoints[1], t));
+            helperPoints.push(lerp(helperPoints[1], helperPoints[2], t));
+
+            // helper point 5 is where the first Bézier ends and where the second Bézier begins
+            helperPoints.push(lerp(helperPoints[3], helperPoints[4], t));
+
+            // points for the dynamic bézier
+            let firstBezier = [
+                points[0],
+                helperPoints[0],
+                helperPoints[3],
+                helperPoints[5]
+            ];
+            //console.log(firstBezier)
+            return firstBezier;
+        }
+
+        function lerp(A, B, t) {
+            let ry = [
+                (B[0] - A[0]) * t + A[0], //x
+                (B[1] - A[1]) * t + A[1] //y
+            ];
+            return ry;
+        }
+
+        function drawCBezier(points, path, index) {
+            let d;
+
+            if (index > 0) {
+                d = subpaths[index].previous.d;
+            } else {
+                d = `M${points[0][0]},${points[0][1]} C`;
+            }
+
+            // points.length == 4
+            for (let i = 1; i < 4; i++) {
+                d += ` ${points[i][0]},${points[i][1]} `;
+            }
+            //console.log(d)
+            partialPath.setAttributeNS(null, "d", d);
+        }
+    </script>
+
+    <div id="castle" style="display: none;">
+        <div class="letter">
+            <div class="valentines">
+                <div class="envelope"></div>
+                <div class="front"></div>
+                <div class="card">
+                    <div class="text">Read</br> My</br> Letter!</div>
+                    <div class="heart"></div>
+                </div>
+                <div class="hearts">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                </div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+
+    </div>
+
+
+    <div class="container" id="rose-t">
+        <svg width="233" height="298" viewBox="0 0 233 298" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="avt" d="M195.5 287.5C194 290 198 297 198 297H159M195.5 287.5C197 285 206 281.6 213 277.667M195.5 287.5L204.25 282.584M109 102V96L112.5 85C111.5 83.5 110 74.5 110 74.5L110.5 62.5L112.5 58L117 52.5L121 48.5L126 40.5L133.5 26L143 13.5L152 6.5L166 1H178L183.5 5L195.5 8L206 21.5L214 40.5V74L217.5 76.5L218 80L217 83L206 95V103V107L207.5 110.5L209 115.5L211.5 120V128L218 139.5V147V151L219 157.5L220 165L221 171.5L224 175.5L225 181V185.5L223 190L222 196L224 202L225 206L223 210.5V215L231 231L232.5 237V242.5L231.5 256L226.5 267.5L213 277.667M109 102L105.5 100.591M109 102L116.5 102.5L123.5 101.5L126.5 98L129 94.5L130 69V65.5L127.5 63.5L126.5 60.5V57.5L128 55H131L132.5 57.5L133.5 52L137.5 46.5L140 43.5L143.5 40.5M54.5 143L50.5 148L46.5 153.5L43 159.5L40.5 165L39.5 170V188L40.5 191.5V195L38 199L35.5 206.5L33 216L27.5 238.5L21 259L14.5 273L9 275.5L1 283.5V291.5L5.5 297H57M54.5 143L55.5 134.5L57 125.5L60 117L62 111.5L64.5 108.5L68 105.5L74.5 101L81.5 99.8333M54.5 143L54 148.5L53 156.5V163V170L54.5 176L57 183L58.5 183.75M213 277.667L204.25 282.584M57 297L62 273L67 262L72 249L75 243.5V225L65.5 206.5L58.5 191.5V183.75M57 297H159M81.5 99.8333L83.5 99.5H97.5L105.5 100.591M81.5 99.8333L78.5 108.5L75 123L73 138L69 150.5L62 165L58.5 176V183.75M105.5 100.591L101.5 105.5L97.5 114.5L92 125.5L86 138L78.5 148L76 152.5L75.5 158.5L87.5 165L104 170L127.5 173.5L149 176L157 163.5M157 163.5L166 176M157 163.5H153L149.5 162L143.5 157.5L140 152L139.5 145.5L140.5 140.5L143.5 136L146.5 132L149 129.5L150.5 127V123L152.5 117M166 176L161 179.5L157 185.5L152.5 195L151 202V210.5L152.5 216V221.5L151 225L149 231L147 240V249L151 258L154 266M166 176H169L166.375 169M154 266L161 273L171 282L181.5 284.5L195.5 282L204.25 282.584M154 266V277.667L157.5 287.5L159 297M143.5 40.5V55V68V74.5V81.5V92.5V98.5V101.5V104.5V111.5L146 115L147.5 116.25L150.5 117H152.5M143.5 40.5V34V28.5L144.5 26.5L146.5 26H154H162.5M191 68V32L189.5 28.5L186.5 26H162.5M191 68V101.5L180.5 89L173 79L168.5 73L167.5 72L164.5 72.5L162 75.5V78.5L163.5 83L170 91.5L177 101.5L182.5 109.5V111L180 110.5L178 109.5L170.5 104L162.5 98.5L155.5 93.5L150.5 90.5H147.5L145 91.5V95L149 100L161.5 109.5L175 121.5L174.5 122.5H173L166.5 117M191 68L192 65L193.5 62.5H196L197 65.5V69L197.5 73L197.833 74M210.5 158.5L207.5 153L207 148V138.5L206.5 125L206 115.5L205 110.5L204 104.5V92.5L197.833 74M210.5 158.5L212 169M210.5 158.5L205 162.5L197.5 165L191.5 167.5L183.5 169L174 170L166.375 169M166.375 169L166 168L167.5 165.5L170.5 163.5L176.5 159.5L179 158.5V148L171.5 138L169 134.5L167.5 129.5L161.5 121.5V117H152.5M162.5 26L168.5 22L174.5 18L179.5 14.5L185.5 13.5L191.5 18L195 23L197.5 28.5L200.5 36L201 50V62.5L197.833 74M183.5 123L187 127M195 115.5L197.833 120M175 129.5L178 132M60 216L53 206.5L48 196L45 191.5L43 185.5M62.5 238.5V231.5L57 227.5L53 222L48 216L45 208.5L43 202M66 165.5L68.5 170L73 173.5L78.5 175.5L86 178M110 183L118 186.5L123.5 187.5L129 188H134.5H140L145 187.5L149 185.5M73 212.5L77 214.5M84.5 218.5L90.5 222L99.5 225L111.5 228L121.5 230H127H132.5L137 227.5L141.5 225L145 223L148.5 219M104 185.5L107.5 190L110 195L112.5 201L113 206.5L110 210.5L108 214.5L104 216L102 213.5L101.5 210.5L102.5 202V192.5L101 188L93 186.5L88 186L85.5 188L83.5 191.5L81.5 199V208.5V212.5L79.5 218.5L76 223L77 216L78.5 208.5L77 195V188L78.5 184.5L81.5 181L84.5 179L88.5 178L95.5 179.5L97.5 181L99.5 178V175.5L102 174L105.5 174.5L107 178L105.5 181L101 183M70.5 238.5H68.5L66 240L64.5 241.5L64 242.5V245.5L65.5 247.5L68.5 248L71.5 247L73 244.5L74 242.5L73.5 239L70.5 238.5Z" stroke="black"/>
+        </svg>
+            
+        
+        <p id="text-click" style=" display: none;   font-family: fantasy;
+        color: indianred;
+        font-size: 50px;
+        cursor: pointer;
+        top: 80%;">Click here --> smile and send me your picture <--Click here</p>
+    </div>
+
+    <div class="box-content">
+        <!-- <i class="fa-solid fa-xmark"></i>
+        <div class="content1">
+            <div class="image-decorate">
+                <div class="textLetter">
+                    <h2></h2>
+                    <p class="contentLetter"></p>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="wrapperLetterForm" style="display: none;">
+            <div class="boxLetter">
+                <i class="fa-solid fa-xmark"></i>
+                <div class="formLetter">
+                    <div class="heartLetter">
+                        <div class="heartLetterItem">
+                        
+                        </div>
+                    </div>
+                    <div class="heartLetter">
+                        <div class="heartLetterItem">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="wrapperLetter">
+                        <div class="giftbox">
+                            <div class="img">
+                                <img src="./image/avt.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="textLetter">
+                            <p class="contentLetter">Anh cũng không biết nói gì cả. Chúc em có 1 kì tết vui vẻ bên gia đình. Cố gắng học nhé, khi nào cảm 
+                                thấy buồn thì hãy nhìn lên bầu trời em sẽ thấy những ngôi sao đang sáng lên đó cũng là hành trình của sự nỗi lực. Mà hồi bữa em đang story hình như em đi lộn nhà vệ sinh thì phải =)))))</p>
+                            </p>
+                            
+                            <div class="heartAnimation">  
+                                <img src="./image/heartAnimation.gif" alt="">
+                            </div>
+                        </div>
+                        <div class="mewmew1">
+                            <img src="./image/mewmew.gif" alt="">
+                        </div>
+                        <div class="mewmew2">
+                            <img src="./image/mewmew.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="before"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- aa3 -->
+    <script>
+
+        (() => {
+            setTimeout(() => {
+                document.querySelector("#text-click").style.display = "inherit";
+            }, 4000);
+            document.querySelector("#rose-t").onclick = function () {
+                document.querySelector("#rose-t").style.display = "none";
+                document.querySelector("#castle").style.display = "flex";
+                document.querySelector("#theSvg").style.display = "inherit"
+
+                rid = window.requestAnimationFrame(Typing);
+                function Typing() {
+                    rid = window.requestAnimationFrame(Typing);
+                    if (t >= 1) {
+                        window.cancelAnimationFrame(rid);
+                        rid = null;
+                    } else {
+                        t += 0.0025;
+                    }
+
+                    lengthAtT = pathlength * t;
+                    for (index = 0; index < subpaths.length; index++) {
+                        if (subpaths[index].pathLength >= lengthAtT) {
+                            break;
+                        }
+                    }
+                    T = get_T(t, index);
+                    newPoints = getBezierPoints(T, subpaths[index].lastCubicBezier);
+                    drawCBezier(newPoints, partialPath, index);
+                }
+            }
+            const head = document.getElementsByTagName('head')[0];
+            let animationId = 1;
+
+            function CreateMagicDust(x1, x2, y1, y2, sizeRatio, fallingTime, animationDelay, node = 'main') {
+                let dust = document.createElement('span');
+                let animation = document.createElement('style');
+                animation.innerHTML = '\
+      @keyframes blink' + animationId + '{\
+          0% {\
+              top: ' + y1 + 'px;\
+              left: ' + x1 + 'px;\
+              width: ' + 2 * sizeRatio + 'px;\
+              height: ' + 2 * sizeRatio + 'px;\
+              opacity: .4\
+          }\
+          20% {\
+              width: ' + 4 * sizeRatio + 'px;\
+              height: ' + 4 * sizeRatio + 'px;\
+              opacity: .8\
+          }\
+          35% {\
+              width: ' + 2 * sizeRatio + 'px;\
+              height: ' + 2 * sizeRatio + 'px;\
+              opacity: .5\
+          }\
+          55% {\
+              width: ' + 3 * sizeRatio + 'px;\
+              height: ' + 3 * sizeRatio + 'px;\
+              opacity: .7\
+          }\
+          80% {\
+              width: ' + sizeRatio + 'px;\
+              height: ' + sizeRatio + 'px;\
+              opacity: .3\
+          }\
+          100% {\
+              top: ' + y2 + 'px;\
+              left: ' + x2 + 'px;\
+              width: ' + 0 + 'px;\
+              height: ' + 0 + 'px;\
+              opacity: .1\
+          }}';
+                head.appendChild(animation);
+                dust.classList.add('dustDef');
+                dust.setAttribute('style', `animation: blink${animationId++} ${fallingTime}s cubic-bezier(.71, .11, .68, .83) infinite ${animationDelay}s`);
+                document.getElementById(node).appendChild(dust);
+            }
+
+            // yes, I'm doing it manually to get the effect I want.. can be easily changed to render randomly
+            [[130, 132, 150, 152, .15, 2.5, .1, 'sub'],
+            [65, 63, 300, 299, .5, 2, .2, 'sub'],
+            [70, 70, 150, 150, .45, 2, .5],
+            [75, 78, 160, 170, .6, 2, 1],
+            [80, 82, 160, 180, .6, 1, .4],
+            [85, 100, 160, 170, .5, 2, .5],
+            [125, 110, 170, 180, .25, 3, 1.5],
+            [90, 90, 115, 115, .4, 2, 2],
+            [93, 95, 200, 200, .4, 3, 1.5],
+            [100, 100, 145, 155, .45, 1, .5],
+            [100, 90, 170, 230, .35, 2, .75],
+            [100, 102, 115, 112, .35, 3, .25],
+            [100, 95, 170, 200, .55, 1.5, .75],
+            [100, 97, 150, 190, .7, 2, 1.5],
+            [105, 100, 160, 180, .5, 1.5, .725],
+            [125, 125, 180, 190, .25, 1, .725],
+            [130, 130, 135, 135, .45, 3, 1.5],
+            [135, 132, 170, 190, .25, 2.5, .75],
+            [135, 132, 320, 315, .2, 5, .3, 'sub']
+            ].forEach((o) => CreateMagicDust(...o));
+
+        })();
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.valentines').mouseenter(function () {
+                $('.card').stop().animate({
+                    top: '-90px'
+                }, 'slow');
+            }).mouseleave(function () {
+                $('.card').stop().animate({
+                    top: 0
+                }, 'slow');
+            });
+
+            $('.card').click(function () {
+                $('.box-content').addClass('active');
+                $(".wrapperLetterForm").fadeIn();
+                funcTimeoutLetter();
+            });
+
+            // Sửa lỗi ở đây: Thêm sự kiện click để đóng cả box-content và wrapperLetterForm
+            $('.fa-xmark').click(function () {
+                $('.box-content').removeClass('active');
+                $('.wrapperLetterForm').fadeOut();
+            });
+        });
+
+        var avt = document.querySelector('.avt');
+
+        var lineDrawing = anime({
+            targets: [avt],
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutCubic',
+            duration: 9000,
+            begin: function (anim) {
+                //Leaf One
+                avt.setAttribute("stroke", "lightpink");
+                avt.setAttribute("fill", "none");
+               
+            },
+            // complete: function (anim) {
+            //     //Leaf One
+            //     avt.setAttribute("fill", "rgba(0,0,0,0.1)");
+            //     avt.setAttribute("stroke", "none");
+                
+            // },
+            autoplay: true,
+        });
+// 
+    </script>
+</body>
+
+</html>
